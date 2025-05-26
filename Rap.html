@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Music - Music Vibes</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script defer src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('image/rock-bg.jpg') no-repeat center center/cover;
+            text-align: center;
+        }
+        .content {
+            padding: 100px 50px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin: 50px auto;
+            width: 80%;
+        }
+        .song-list {
+            list-style: none;
+            padding: 0;
+        }
+        .song-list li {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        /* Navbar Styling */
+        .navbar {
+            background: rgba(0, 0, 0, 0.8) !important;
+            padding: 15px 0;
+        }
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        .nav-link {
+            color: white !important;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+        .dropdown-menu {
+            background: black;
+            border: none;
+        }
+        .dropdown-item {
+            color: white !important;
+        }
+        .dropdown-item:hover {
+            background: #ffcc00;
+            color: black !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-xl mx-5">
+            <div class="container-fluid ps-3">
+                <div class="logo-container">
+                    <a class="navbar-brand" href="#"><img src="image/music logo.png" alt="" class="img-fluid"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered accent-color-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-xl-5 ps-xl-5 me-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Musics
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="rock.html">Rock</a></li>
+                                <li><a class="dropdown-item" href="jazz.html">Jazz</a></li>
+                                <li><a class="dropdown-item" href="pop.html">Pop</a></li>
+                                <li><a class="dropdown-item" href="rap.html">Rap</a></li>
+                                <li><a class="dropdown-item" href="classical.html">Classical</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Career achievements
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="services.html">Services</a></li>
+                            </ul>
+                        </li>
+                        <label for="" style="margin-top: 10px; font-weight: bolder;">Search</label>
+                        <input type="search" style="height: 20px; margin-top: 10px; width: 310px; border-radius: 20px;">
+                    </ul>
+                    <div class="d-flex flex-row gap-3 w-max-content justify-content-center">
+                        <div class="border-end pe-3">
+                            <a href="#" class="link d-flex flex-row gap-3 align-items-center">
+                                ENG
+                            </a>
+                        </div>
+                        <div>
+                            <a href="contact.html" class="link d-flex flex-row gap-3 align-items-center">
+                                SIGN IN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="section position-relative bg-attach-cover" style="background-image: url(image/img2.jpg);">
+    <div class="content">
+        <h2>Rap Music</h2>
+        <p>Experience the rhythmic beats and powerful lyrics of Rap music.</p>
+        <h3>Popular Songs</h3>
+        <ul class="song-list">
+            <li>Lose Yourself - Eminem</li>
+            <li>Juicy - The Notorious B.I.G.</li>
+            <li>Changes - 2Pac</li>
+            <li>HUMBLE. - Kendrick Lamar</li>
+            <li>Sicko Mode - Travis Scott</li>
+            <li>God's Plan - Drake</li>
+            <li>Gold Digger - Kanye West</li>
+            <li>Empire State of Mind - Jay-Z & Alicia Keys</li>
+            <li>Stan - Eminem</li>
+            <li>Old Town Road - Lil Nas X</li>
+        </ul>
+        <div class="artist-details">
+            <h3>Featured Artist: Eminem</h3>
+            <p><strong>Personal Details:</strong> Born in 1972, Eminem is one of the greatest rappers of all time.</p>
+            <p><strong>Career Achievements:</strong> Multiple Grammy Awards and one of the best-selling artists in history.</p>
+            <p><strong>Collection:</strong> Known for iconic albums like "The Marshall Mathers LP" and "The Eminem Show".</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
